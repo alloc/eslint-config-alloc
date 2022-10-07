@@ -1,0 +1,22 @@
+module.exports = {
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint', 'sonarjs'],
+  rules: {
+    '@typescript-eslint/no-misused-promises': 'error',
+    '@typescript-eslint/no-unsafe-argument': 'warn',
+    '@typescript-eslint/no-unsafe-assignment': 'warn',
+    '@typescript-eslint/no-unsafe-call': 'warn',
+    '@typescript-eslint/no-unsafe-member-access': 'warn',
+    '@typescript-eslint/no-unsafe-return': 'warn',
+    'for-direction': 'error',
+    'no-cond-assign': 'error',
+    'no-constant-binary-expression': 'error',
+    'no-dupe-else-if': 'error',
+    'no-unsafe-finally': 'error',
+    'no-unsafe-negation': 'error',
+    'sonarjs/no-extra-arguments': 'error',
+    'sonarjs/no-ignored-return': 'error',
+    'use-isnan': 'error',
+    'valid-typeof': 'error',
+  },
+}
