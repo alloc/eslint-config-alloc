@@ -1,6 +1,9 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'sonarjs'],
+  parser: require.resolve('@typescript-eslint/parser'),
+  plugins: [
+    require.resolve('@typescript-eslint/eslint-plugin'),
+    require.resolve('eslint-plugin-sonarjs'),
+  ],
   rules: {
     '@typescript-eslint/no-misused-promises': 'error',
     '@typescript-eslint/no-unsafe-argument': 'warn',
